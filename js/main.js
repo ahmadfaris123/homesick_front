@@ -103,7 +103,14 @@ function initPersonelSlider() {
         const w = window.innerWidth;
         if (w < 640) return 1;
         if (w < 1024) return 2;
-        return 3;
+        return 4;
+    }
+
+    function getGap() {
+        const w = window.innerWidth;
+        if (w < 640) return 16;
+        if (w < 1280) return 18;
+        return 24;
     }
 
     function getMaxIndex() {
@@ -112,7 +119,8 @@ function initPersonelSlider() {
 
     function updateSlideWidths() {
         const itemsPerView = getItemsPerView();
-        const gap = 24;
+        const gap = getGap();
+        track.style.gap = `${gap}px`;
         slides.forEach(slide => {
             slide.style.width = `calc((100% - (${itemsPerView} - 1) * ${gap}px) / ${itemsPerView})`;
             slide.style.minWidth = `calc((100% - (${itemsPerView} - 1) * ${gap}px) / ${itemsPerView})`;
@@ -147,8 +155,14 @@ function initPersonelSlider() {
         if (currentIndex < 0) currentIndex = 0;
 
         const itemsPerView = getItemsPerView();
-        const gap = 24;
+        const gap = getGap();
         track.style.transform = `translateX(calc(-${currentIndex} * (100% + ${gap}px) / ${itemsPerView}))`;
+
+        // Toggle navigation buttons container visibility when all cards fit on one screen
+        const navContainer = prevBtn.parentElement;
+        if (navContainer) {
+            navContainer.style.display = maxIdx <= 0 ? 'none' : 'flex';
+        }
 
         // Update Prev Button
         if (currentIndex === 0) {

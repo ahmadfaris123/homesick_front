@@ -241,9 +241,9 @@
                                 <svg class="w-4 h-4 -rotate-45" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg>
                             </div>
 
-                            <div class="absolute top-1/2 -left-6 sm:-left-12 bg-[#ffea00] text-black font-marker text-sm sm:text-base px-4 py-1.5 rounded-full border-2 border-black -rotate-6 shadow-[3px_3px_0px_#000] z-20 hover:rotate-3 transition-transform cursor-pointer">
+                            <!-- <div class="absolute top-1/2 -left-6 sm:-left-12 bg-[#ffea00] text-black font-marker text-sm sm:text-base px-4 py-1.5 rounded-full border-2 border-black -rotate-6 shadow-[3px_3px_0px_#000] z-20 hover:rotate-3 transition-transform cursor-pointer">
                                 ⚡ RIOT NOISE
-                            </div>
+                            </div> -->
 
                             <div class="absolute -bottom-4 -right-4 sm:-right-8 bg-white text-black font-mono-raw text-[10px] px-3 py-1 border border-black rotate-3 shadow-[2px_2px_0px_#000] z-30">
                                 [NO RULES APPLIED]
@@ -431,13 +431,13 @@
                             <img 
                                 src="https://img.youtube.com/vi/sOOrbAYe12E/maxresdefault.jpg" 
                                 alt="Latest video thumbnail" 
-                                class="w-full h-full object-cover grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 filter"
+                                class="absolute inset-0 w-full h-full object-cover object-center grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 filter"
                                 onerror="this.src='https://img.youtube.com/vi/sOOrbAYe12E/hqdefault.jpg'"
                             >
                             <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
 
                             <!-- Pulsing Play Button -->
-                            <div class="relative z-10 flex flex-col items-center justify-center gap-4">
+                            <div class="relative z-10 flex flex-col items-center justify-center gap-4 text-center">
                                 <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-[#ff0055] text-white flex items-center justify-center border-4 border-black shadow-[0_0_35px_#ff0055] group-hover:bg-[#ffea00] group-hover:text-black group-hover:scale-110 transition-all">
                                     <span class="font-marker text-3xl sm:text-4xl ml-1.5">▶</span>
                                 </div>
@@ -516,8 +516,8 @@
                     <div class="overflow-hidden py-4 -mx-2 px-2 select-none" id="personel-slider-wrapper">
                         <div class="flex" id="personel-track" style="gap: 24px; transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);">
                             
-                            <!-- Personel 3: Andika -->
-                            <div class="personel-slide shrink-0 fade-up delay-2" data-member="1">
+                            <!-- Personel 1: Andika -->
+                            <div class="personel-slide shrink-0 fade-up" data-member="1">
                                 <div class="bg-black/95 border-2 border-white/20 hover:border-[#ffea00] relative flex flex-col justify-between h-full shadow-[8px_8px_0px_#ff0055] hover:shadow-[10px_10px_0px_#ffea00] transition-all duration-300 group overflow-hidden">
                                     <div class="tape-strip absolute -top-3 -left-5 w-24 h-6 -rotate-12 z-30 pointer-events-none"></div>
                                     <div class="tape-strip absolute -bottom-3 -right-5 w-24 h-6 rotate-6 z-30 pointer-events-none"></div>
@@ -528,7 +528,7 @@
                                             <span class="font-mono-raw text-xs text-[#a3a3a3] uppercase tracking-wider block">
                                                 ROSTER // 01
                                             </span>
-                                            <h3 class="font-marker text-3xl sm:text-4xl text-white mt-1 group-hover:text-[#ffea00] transition-colors uppercase leading-none drop-shadow-[2px_2px_0px_#000]">
+                                            <h3 class="font-marker text-2xl xl:text-3xl text-white mt-1 group-hover:text-[#ffea00] transition-colors uppercase leading-none drop-shadow-[2px_2px_0px_#000]">
                                                 Andika Permana
                                             </h3>
                                         </div>
@@ -572,8 +572,8 @@
                                 </div>
                             </div>
 
-                            <!-- Personel 1: Arya -->
-                            <div class="personel-slide shrink-0 fade-up" data-member="3">
+                            <!-- Personel 2: Arya -->
+                            <div class="personel-slide shrink-0 fade-up delay-1" data-member="2">
                                 <div class="bg-black/95 border-2 border-white/20 hover:border-[#ffea00] relative flex flex-col justify-between h-full shadow-[8px_8px_0px_#ff0055] hover:shadow-[10px_10px_0px_#ffea00] transition-all duration-300 group overflow-hidden">
                                     <div class="tape-strip absolute -top-3 -left-5 w-24 h-6 -rotate-12 z-30 pointer-events-none"></div>
                                     <div class="tape-strip absolute -bottom-3 -right-5 w-24 h-6 rotate-6 z-30 pointer-events-none"></div>
@@ -584,7 +584,7 @@
                                             <span class="font-mono-raw text-xs text-[#a3a3a3] uppercase tracking-wider block">
                                                 ROSTER // 02
                                             </span>
-                                            <h3 class="font-marker text-3xl sm:text-4xl text-white mt-1 group-hover:text-[#ffea00] transition-colors uppercase leading-none drop-shadow-[2px_2px_0px_#000]">
+                                            <h3 class="font-marker text-2xl xl:text-3xl text-white mt-1 group-hover:text-[#ffea00] transition-colors uppercase leading-none drop-shadow-[2px_2px_0px_#000]">
                                                 Arya Fajar
                                             </h3>
                                         </div>
@@ -628,8 +628,8 @@
                                 </div>
                             </div>
 
-                            <!-- Personel 2: Surip -->
-                            <div class="personel-slide shrink-0 fade-up delay-1" data-member="2">
+                            <!-- Personel 3: Surip / Rasyid -->
+                            <div class="personel-slide shrink-0 fade-up delay-2" data-member="3">
                                 <div class="bg-black/95 border-2 border-white/20 hover:border-[#ffea00] relative flex flex-col justify-between h-full shadow-[8px_8px_0px_#ff0055] hover:shadow-[10px_10px_0px_#ffea00] transition-all duration-300 group overflow-hidden">
                                     <div class="tape-strip absolute -top-3 -left-5 w-24 h-6 -rotate-12 z-30 pointer-events-none"></div>
                                     <div class="tape-strip absolute -bottom-3 -right-5 w-24 h-6 rotate-6 z-30 pointer-events-none"></div>
@@ -640,7 +640,7 @@
                                             <span class="font-mono-raw text-xs text-[#a3a3a3] uppercase tracking-wider block">
                                                 ROSTER // 03
                                             </span>
-                                            <h3 class="font-marker text-3xl sm:text-4xl text-white mt-1 group-hover:text-[#ffea00] transition-colors uppercase leading-none drop-shadow-[2px_2px_0px_#000]">
+                                            <h3 class="font-marker text-2xl xl:text-3xl text-white mt-1 group-hover:text-[#ffea00] transition-colors uppercase leading-none drop-shadow-[2px_2px_0px_#000]">
                                                 Rasyid Darmawan
                                             </h3>
                                         </div>
@@ -684,8 +684,8 @@
                                 </div>
                             </div>
 
-                            <!-- Personel 2: Surip -->
-                            <div class="personel-slide shrink-0 fade-up delay-1" data-member="2">
+                            <!-- Personel 4: Hita -->
+                            <div class="personel-slide shrink-0 fade-up delay-3" data-member="4">
                                 <div class="bg-black/95 border-2 border-white/20 hover:border-[#ffea00] relative flex flex-col justify-between h-full shadow-[8px_8px_0px_#ff0055] hover:shadow-[10px_10px_0px_#ffea00] transition-all duration-300 group overflow-hidden">
                                     <div class="tape-strip absolute -top-3 -left-5 w-24 h-6 -rotate-12 z-30 pointer-events-none"></div>
                                     <div class="tape-strip absolute -bottom-3 -right-5 w-24 h-6 rotate-6 z-30 pointer-events-none"></div>
@@ -696,7 +696,7 @@
                                             <span class="font-mono-raw text-xs text-[#a3a3a3] uppercase tracking-wider block">
                                                 ROSTER // 04
                                             </span>
-                                            <h3 class="font-marker text-3xl sm:text-4xl text-white mt-1 group-hover:text-[#ffea00] transition-colors uppercase leading-none drop-shadow-[2px_2px_0px_#000]">
+                                            <h3 class="font-marker text-2xl xl:text-3xl text-white mt-1 group-hover:text-[#ffea00] transition-colors uppercase leading-none drop-shadow-[2px_2px_0px_#000]">
                                                 Hita Putradi
                                             </h3>
                                         </div>
@@ -709,7 +709,7 @@
                                     <div class="relative aspect-[4/5] sm:aspect-[3/4] w-full overflow-hidden bg-neutral-900">
                                         <img 
                                             src="assets/storage/personel/DSC03691.jpg" 
-                                            alt="Surip" 
+                                            alt="Hita" 
                                             class="w-full h-full object-cover grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 filter"
                                         >
                                         <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent pointer-events-none"></div>
@@ -717,7 +717,7 @@
                                             ★ HOMESICK
                                         </div>
                                         <div class="absolute bottom-3 left-3 bg-[#ff0055] text-white font-mono-raw font-black text-[11px] px-2.5 py-1 rotate-1 shadow-[2px_2px_0px_#000] uppercase">
-                                            Gitaris
+                                            Basis
                                         </div>
                                     </div>
 
@@ -734,7 +734,7 @@
                                         </div>
                                         <div class="mt-3 pt-3 border-t border-white/10 flex items-center justify-between font-mono-raw text-[9px] text-white/40">
                                             <div class="tracking-[3px] font-black">||| || | |||| || | |</div>
-                                            <div>ID: HSS-MBR-02</div>
+                                            <div>ID: HSS-MBR-04</div>
                                         </div>
                                     </div>
                                 </div>
