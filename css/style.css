@@ -164,3 +164,15 @@ html {
 .torn-photo-clip {
     clip-path: polygon(0% 4%, 4% 0%, 12% 3%, 24% 1%, 38% 4%, 52% 0%, 65% 3%, 78% 1%, 89% 4%, 97% 1%, 100% 7%, 98% 22%, 100% 36%, 97% 52%, 100% 68%, 98% 84%, 100% 96%, 95% 100%, 82% 97%, 69% 100%, 55% 97%, 42% 100%, 28% 98%, 15% 100%, 5% 97%, 0% 94%, 2% 78%, 0% 62%, 3% 45%, 0% 28%, 2% 14%);
 }
+
+/* Responsive Navbar Utilities */
+@media (min-width: 48rem) {
+    .md\:justify-between {
+        justify-content: space-between;
+    }
+    .md\:mx-0 {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
