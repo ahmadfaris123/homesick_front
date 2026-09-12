@@ -7,17 +7,32 @@
 /* ========================================================================= */
 @font-face {
     font-family: 'Grindy Brush';
-    src: url('../assets/fonts/Grindy%20Brush.otf') format('opentype');
+    src: url('../assets/fonts/Grindy%20Brush.otf') format('opentype'),
+         url('../assets/fonts/Grindy Brush.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Airone';
     src: url('../assets/fonts/AironeFont-Demo.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 /* ========================================================================= */
 /* Grunge Y2K Utility Classes & Keyframes */
 /* ========================================================================= */
+.font-grindy,
+.font-grindy-brush {
+    font-family: 'Grindy Brush', cursive, sans-serif;
+}
+.font-airone,
+.font-Airone {
+    font-family: 'Airone', cursive, sans-serif;
+}
 .font-marker {
     font-family: 'Permanent Marker', 'Grindy Brush', cursive, sans-serif;
 }
